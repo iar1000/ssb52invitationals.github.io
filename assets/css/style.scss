@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+header{ background: #329900; }
+header h1, header p{ color: #f5b201 !important; }
+body{ background: #01009a; }
+#banner{ background: #e10916; }
+#banner #logo{
+  background: url(https://upload.wikimedia.org/wikipedia/de/0/04/Nintendo_64_Logo.svg) !important;
+  width:36px;
+  height:36px;
+}
+
