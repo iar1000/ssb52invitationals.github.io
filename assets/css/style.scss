@@ -3,9 +3,14 @@
 
 @import "{{ site.theme }}";
 header{ background: #329900; }
-header h1, header p{ color: #f5b201 !important; }
+header h1, 
+header p,
+nav ul a,
+footer p a{ color: #f5b201 !important; }
 body{ background: #01009a; }
 #banner{ background: #e10916; }
+footer p{ color: white !important; }
+
 #banner #n64icon{
   position: absolute;
   height: 36px;
@@ -13,5 +18,10 @@ body{ background: #01009a; }
   right: 5px;
   top: 10%;
   display: block;
+}
+
+#banner {
+    margin-right: -25% !important;
+    width: 75% !important;
 }
 
