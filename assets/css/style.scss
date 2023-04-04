@@ -8,9 +8,13 @@ nav ul a,
 footer p a{ color: #f5b201 !important; }
 body{ background: #01009a; }
 #banner{ background: #e10916; }
-footer p{ color: white !important; }
+footer p, strong em{ color: white !important; }
 
 h1, h2, h3 {
+  text-align: center;
+}
+
+#next-meetings p{
   text-align: center;
 }
 
