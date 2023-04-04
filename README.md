@@ -1,6 +1,6 @@
 # the tournament
 ## next meeting
-tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd
+sunday, 9. April 2023
 
 ## stats
 
