@@ -3,9 +3,17 @@
 
 @import "{{ site.theme }}";
 header{ background: #329900; }
-header h1, header p{ color: #f5b201 !important; }
+h1, h2, h3, p,
+nav ul a,
+footer p a{ color: #f5b201 !important; }
 body{ background: #01009a; }
 #banner{ background: #e10916; }
+footer p, strong em{ color: white !important; }
+
+h1, h2, h3 {
+  text-align: center;
+}
+
 #banner #n64icon{
   position: absolute;
   height: 36px;
@@ -15,3 +23,17 @@ body{ background: #01009a; }
   display: block;
 }
 
+#banner {
+    margin-right: -25% !important;
+    width: 75% !important;
+}
+
+section {
+  padding: 20px 20px 40px 20px !important;
+  box-shadow: none !important;
+  background: #01009a !important;
+}
+
+nav{
+  display: block !important;
+}
