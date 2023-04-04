@@ -1,7 +1,10 @@
 # the tournament
 
 ## next meetings
-sunday, 9. April 2023
+| |
+| :-: |
+| sunday, 9. April 2023 |
+
 
 ## stats
 
@@ -10,7 +13,7 @@ The K4 Super Smash Bros Invitationals is a legendary tournament that has been he
 Over the years, the K4 Super Smash Bros Invitationals has become known for its fierce competition and high level of skill. Many of the top players in the world have competed in the tournament, and it has become a showcase for some of the most exciting and innovative gameplay in the Super Smash Bros. community.  
 The tournament has become a must-attend event for players and fans alike, and it has helped to cement Super Smash Bros. N64 as one of the most exciting and dynamic competitive gaming communities in the world.
 ![](content/group-wide.png)
-***figure:*** *ssb52 at the annual board meeting at hyrule castle (2021)*
+***figure:*** *ssb52 at the annual board meeting on hyrule castle (2021)*
 
 
 
