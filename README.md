@@ -1,9 +1,7 @@
 # the tournament
 
 ## next meetings
-| |
-| :-: |
-| sunday, 9. April 2023 |
+- sunday, 9. April 2023
 
 
 ## stats
