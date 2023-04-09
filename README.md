@@ -1,10 +1,18 @@
 # the tournament
 
 ## next meetings
-- sunday, 9. April 2023
+- tbd
 
 
 ## stats
+**sunday, 9. April 2023**, tournament was conducted under standart competition rules, wheras a total of 30 games where played.
+
+|          | kirby | pika | luigi | kirby yellow | fox | falcon  |    
+|----------|:-----:|:----:|:-----:|:------------:|:--:|:------:|    
+| avg. pts |  1.7  | 1.55 | 1.78  |     0.82     | 1.875 |   1.30 |  
+| avg. kills | 3.45  | 2.67 | 2.78  |     1.53     | 1.34   |    1.95   |    
+| rank       |  3.   |      |  2.   |              |  1. |         |  
+
 
 ## history
 The K4 Super Smash Bros Invitationals is a legendary tournament that has been held by the SSB.52 group since its inception in January 4. 2014. The tournament attracts the best players from all over the world who come to compete for gold and glory. The first K4 Super Smash Bros Invitational was a small affair, with only a few players attending. However, after the move from 52 to 4 it gained popularity, quickly attracting the best players from all of the region. 
