@@ -5,13 +5,18 @@
 
 
 ## stats
-**sunday, 9. April 2023**, tournament was conducted under standart competition rules, wheras a total of 30 games where played.
+**sunday, 9. April 2023**, tournament was conducted in the planted arena. an average of 22 games was played per player.
 
-|          | kirby | pika | luigi | kirby yellow | fox | falcon  |    
-|----------|:-----:|:----:|:-----:|:------------:|:--:|:------:|    
-| avg. pts |  1.7  | 1.55 | 1.78  |     0.82     | 1.875 |   1.30 |  
-| avg. kills | 3.45  | 2.67 | 2.78  |     1.53     | 1.34   |    1.95   |    
-| rank       |  3.   |      |  2.   |              |  1. |         |  
+|                   | kirby     | pika      | luigi     | kirby (yellow)    | fox       | falcon    |    
+|----------         |:-----:    |:----:     |:-----:    |:------------:     |:--:       |:------:   |    
+| ***avg. pts***    |  1.7      | 1.55      | 1.78      |     0.82          | 1.875     |   1.30    |  
+| ***avg. kills***  | 3.45      | 2.67      | 2.78      |     1.53          | 1.34      |    1.95   |    
+| ***rank***        |  ***3.*** |           |  ***2.*** |                   |  ***1.*** |           |  
+|                   |           |           |           |                   |           |           |
+|***first***        | 8         | 5         | 7         | 1                 | 6         | 4         |
+|***second***       | 4         | 5         | 5         | 3                 | 11        | 4         |
+|***third***        | 2         | 3         | 3         | 5                 | 5         | 10        |
+|***fourth***       | 6         | 5         | 5         | 8                 | 2         | 5         |
 
 
 ## history
