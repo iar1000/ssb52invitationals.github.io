@@ -5,18 +5,33 @@
 
 
 ## stats
-**sunday, 9. April 2023**, tournament was conducted in the planted arena. an average of 22 games was played per player.
+**saturday, 09. Nov 2024**, tournament was conducted in the planted arena. an average of 11 games was played per player.
 
-|                   | RT     	| LS      	| PK     	| PS    			| NG       	| BG    	|    
-|----------         |:-----:    |:----:     |:-----:    |:------------:     |:--:       |:------:   |    
-| ***avg. pts***    |  1.7      | 1.55      | 1.78      |     0.82          | 1.875     |   1.30    |  
-| ***avg. kills***  | 3.45      | 2.67      | 2.78      |     1.53          | 1.34      |    1.95   |    
-| ***rank***        |  ***3.*** |           |  ***2.*** |                   |  ***1.*** |           |  
-|                   |           |           |           |                   |           |           |
-|***first***        | 8         | 5         | 7         | 1                 | 6         | 4         |
-|***second***       | 4         | 5         | 5         | 3                 | 11        | 4         |
-|***third***        | 2         | 3         | 3         | 5                 | 5         | 10        |
-|***fourth***       | 6         | 5         | 5         | 8                 | 2         | 5         |
+|                   | FerG     	| LS      	| PK     	| MM    			| RA       	|   
+|----------         |:-----:    |:----:     |:-----:    |:------------:     |:--:       |  
+| ***avg. pts***    |  0.5      | 1.58      | 2.08      |     1.72          | 1.45     |  
+| ***avg. kills***  | 0.6      | 2.42      | 2.82      |     2.82          | 2.27      |  
+| ***rank***        |           | ***3.***  |  ***1.*** |     ***2.***      |           |  
+|                   |           |           |           |                   |           | 
+|***first***        | 0         | 4         | 5         | 2                 | 3         | 
+|***second***       | 1         | 2         | 3         | 6                 | 2        | 
+|***third***        | 3         | 3         | 4         | 1                 | 3         | 
+|***fourth***       | 6         | 3         | 0         | 2                 | 3         | 
+
+
+**friday, 17. Mai 2024**, tournament was conducted in the planted arena. an average of 13 games was played per player.
+
+|                   | RT     	| LS      	| PK     	| BG    			| DH       	|   
+|----------         |:-----:    |:----:     |:-----:    |:------------:     |:--:       |  
+| ***avg. pts***    |  1.6      | 1      | 2.46      |     1.33          | 0.86     |  
+| ***avg. kills***  | 2.8      | 2.42      | 3.53      |     1.1          | 0.43      |  
+| ***rank***        |  ***2.*** |           |  ***1.*** |     ***3.***               |  |  
+|                   |           |           |           |                   |           | 
+|***first***        | 4         | 1         | 8         | 1                 | 1         | 
+|***second***       | 4         | 4         | 3         | 3                 | 1        | 
+|***third***        | 4         | 1         | 2         | 7                 | 1         | 
+|***fourth***       | 3         | 6         | 0         | 1                 | 4         | 
+
 
 **sunday, 23. April 2023**, tournament was conducted underneath the legendary steve's livingroom arena. an average of 11 games was played per player.
 
@@ -31,18 +46,19 @@
 |***third***        | 4         | 2         | 0         | 4         | 1         | 4        	|
 |***fourth***       | 6         | 3         | 0         | 0         | 2         | 2         |
 
-**friday, 17. Mai 2024**, tournament was conducted in the planted arena. an average of 13 games was played per player.
 
-|                   | RT     	| LS      	| PK     	| BG    			| DH       	|   
-|----------         |:-----:    |:----:     |:-----:    |:------------:     |:--:       |  
-| ***avg. pts***    |  1.6      | 1      | 2.46      |     1.33          | 0.86     |  
-| ***avg. kills***  | 2.8      | 2.42      | 3.53      |     1.1          | 0.43      |  
-| ***rank***        |  ***2.*** |           |  ***1.*** |     ***3.***               |  |  
-|                   |           |           |           |                   |           | 
-|***first***        | 4         | 1         | 8         | 1                 | 1         | 
-|***second***       | 4         | 4         | 3         | 3                 | 1        | 
-|***third***        | 4         | 1         | 2         | 7                 | 1         | 
-|***fourth***       | 3         | 6         | 0         | 1                 | 4         | 
+**sunday, 9. April 2023**, tournament was conducted in the planted arena. an average of 22 games was played per player.
+
+|                   | RT     	| LS      	| PK     	| PS    			| NG       	| BG    	|    
+|----------         |:-----:    |:----:     |:-----:    |:------------:     |:--:       |:------:   |    
+| ***avg. pts***    |  1.7      | 1.55      | 1.78      |     0.82          | 1.875     |   1.30    |  
+| ***avg. kills***  | 3.45      | 2.67      | 2.78      |     1.53          | 1.34      |    1.95   |    
+| ***rank***        |  ***3.*** |           |  ***2.*** |                   |  ***1.*** |           |  
+|                   |           |           |           |                   |           |           |
+|***first***        | 8         | 5         | 7         | 1                 | 6         | 4         |
+|***second***       | 4         | 5         | 5         | 3                 | 11        | 4         |
+|***third***        | 2         | 3         | 3         | 5                 | 5         | 10        |
+|***fourth***       | 6         | 5         | 5         | 8                 | 2         | 5         |
 
 
 ## history
