@@ -424,6 +424,10 @@ with tab_stats:
         "Ranking mode", ["Total", "Decay (last 4 tournaments)"], horizontal=True,
     )
 
+    rank_by = st.radio(
+        "Rank by", ["Avg Points", "Avg Kills", "Tournament Win"], horizontal=True,
+    )
+
     all_tournaments = sorted(list_tournaments(), reverse=True)
     if ranking_mode.startswith("Decay"):
         all_tournaments = all_tournaments[:4]
@@ -438,6 +442,39 @@ with tab_stats:
         st.info("No matches across any tournament yet.")
     else:
         all_players = sorted(all_matches["player"].unique())
+
+        # Calculate tournament placements (1st, 2nd, 3rd) and tournament win points
+        tournament_win_pts: dict[str, int] = {p: 0 for p in all_players}
+        tournament_1st: dict[str, int] = {p: 0 for p in all_players}
+        tournament_2nd: dict[str, int] = {p: 0 for p in all_players}
+        tournament_3rd: dict[str, int] = {p: 0 for p in all_players}
+
+        for t in all_tournaments:
+            tdf = load_matches(t)
+            if tdf.empty:
+                continue
+            # Calculate total points per player in this tournament
+            t_players = tdf["player"].unique()
+            t_totals = {}
+            for tp in t_players:
+                tpdata = tdf[tdf["player"] == tp]
+                t_totals[tp] = int(
+                    (tpdata["rank"] == 1).sum() * 3
+                    + (tpdata["rank"] == 2).sum() * 2
+                    + (tpdata["rank"] == 3).sum() * 1
+                )
+            # Rank players by total points in tournament
+            sorted_players = sorted(t_totals.items(), key=lambda x: x[1], reverse=True)
+            place_pts = {0: 3, 1: 2, 2: 1}  # 1st=3, 2nd=2, 3rd=1
+            for place, (player, _) in enumerate(sorted_players):
+                tournament_win_pts[player] = tournament_win_pts.get(player, 0) + place_pts.get(place, 0)
+                if place == 0:
+                    tournament_1st[player] = tournament_1st.get(player, 0) + 1
+                elif place == 1:
+                    tournament_2nd[player] = tournament_2nd.get(player, 0) + 1
+                elif place == 2:
+                    tournament_3rd[player] = tournament_3rd.get(player, 0) + 1
+
         world_stats: dict[str, dict[str, object]] = {}
         for p in all_players:
             pdata = all_matches[all_matches["player"] == p]
@@ -461,10 +498,22 @@ with tab_stats:
                 "2nd": int((pdata["rank"] == 2).sum()),
                 "3rd": int((pdata["rank"] == 3).sum()),
                 "4th": int((pdata["rank"] == 4).sum()),
+                "T-1st": tournament_1st.get(p, 0),
+                "T-2nd": tournament_2nd.get(p, 0),
+                "T-3rd": tournament_3rd.get(p, 0),
+                "Tournament Pts": tournament_win_pts.get(p, 0),
             }
 
         world_df = pd.DataFrame(world_stats)
-        world_order = world_df.loc["Avg Pts"].sort_values(ascending=False).index
+
+        # Sort based on rank_by selection
+        if rank_by == "Avg Points":
+            world_order = world_df.loc["Avg Pts"].sort_values(ascending=False).index
+        elif rank_by == "Avg Kills":
+            world_order = world_df.loc["Avg Kills"].sort_values(ascending=False).index
+        else:  # Tournament Win
+            world_order = world_df.loc["Tournament Pts"].sort_values(ascending=False).index
+
         world_df = world_df[world_order]
         st.dataframe(world_df, use_container_width=True)
 
