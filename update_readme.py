@@ -308,10 +308,6 @@ def generate_tournament_table(date_str, players, stats, avg_games):
     for player in active_players:
         third_row += f" {stats[player]['third']}         |"
     
-    fourth_row = "|***fourth***       |"
-    for player in active_players:
-        fourth_row += f" {stats[player]['fourth']}         |"
-    
     table = f"""{date_formatted}, tournament was conducted {arena}. an average of {avg_games} games was played per player.
 
 {header}
@@ -323,7 +319,6 @@ def generate_tournament_table(date_str, players, stats, avg_games):
 {first_row}
 {second_row}
 {third_row}
-{fourth_row}
 
 """
     return table
@@ -339,15 +334,15 @@ def generate_global_stats_table(global_stats):
     sorted_players = sorted(global_stats.items(), key=lambda x: (calc_tournament_points(x[1]), x[1]['avg_pts']), reverse=True)
     
     lines = []
-    lines.append("| Player | Tournaments | Games | Avg Pts | Avg Kills | Total Kills | 🥇 | 🥈 | 🥉 | 1st | 2nd | 3rd | 4th |")
-    lines.append("|:-------|:-----------:|:-----:|:-------:|:---------:|:-----------:|:--:|:--:|:--:|:---:|:---:|:---:|:---:|")
+    lines.append("| Player | Tournaments | Games | Avg Pts | Avg Kills | Total Kills | 🥇 | 🥈 | 🥉 | 1st | 2nd | 3rd |")
+    lines.append("|:-------|:-----------:|:-----:|:-------:|:---------:|:-----------:|:--:|:--:|:--:|:---:|:---:|:---:|")
     
     for player, stats in sorted_players:
         abbrev = get_player_abbrev(player)
         lines.append(
             f"| {abbrev} | {stats['tournaments']} | {stats['games']} | {stats['avg_pts']} | "
             f"{stats['avg_kills']} | {stats['total_kills']} | {stats['tournament_wins']} | {stats['tournament_seconds']} | "
-            f"{stats['tournament_thirds']} | {stats['first']} | {stats['second']} | {stats['third']} | {stats['fourth']} |"
+            f"{stats['tournament_thirds']} | {stats['first']} | {stats['second']} | {stats['third']} |"
         )
     
     return "\n".join(lines)
@@ -358,16 +353,15 @@ def generate_readme(tournaments, global_stats):
     # Sort tournaments by date descending
     sorted_dates = sorted(tournaments.keys(), reverse=True)
     
-    content = """# the tournament
+    content = """# global ranking
 
-## global ranking
 *Statistics across all tournaments. 🥇🥈🥉 = tournament placements, 1st-4th = match placements.*
 *Sorted by tournament placement points (🥇=3pts, 🥈=2pts, 🥉=1pt).*
 
 """
     
     content += generate_global_stats_table(global_stats)
-    content += "\n\n\n## past results\n"
+    content += "\n\n\n## tournaments\n"
     
     for date_str in sorted_dates:
         data = tournaments[date_str]
@@ -376,21 +370,14 @@ def generate_readme(tournaments, global_stats):
         content += table
     
     content += """
-## history
-The K4 Super Smash Bros Invitationals is a legendary tournament that has been held by the SSB.52 group since its inception in January 4. 2014. The tournament attracts the best players from all over the world who come to compete for gold and glory. The first K4 Super Smash Bros Invitational was a small affair, with only a few players attending. However, after the move from 52 to 4 it gained popularity, quickly attracting the best players from all of the region. 
-Over the years, the K4 Super Smash Bros Invitationals has become known for its fierce competition and high level of skill. Many of the top players in the world have competed in the tournament, and it has become a showcase for some of the most exciting and innovative gameplay in the Super Smash Bros. community.  
-The tournament has become a must-attend event for players and fans alike, and it has helped to cement Super Smash Bros. N64 as one of the most exciting and dynamic competitive gaming communities in the world.
-![](content/group-wide.png)
-***figure:*** *ssb52 at the annual board meeting on hyrule castle (2021)*
 
 # tracking app
 ## setup
-1. install python
-2. run `pip install -r requirements.txt` to install dependencies
-3. run `streamlit run app.py` to start the app
-4. create the tournament and track the results
-5. run `python update_readme.py` to update the README with the latest stats
-6. push the changes to github to share the results with the community
+setup the python environment.  
+run `streamlit run app/app.py` to start the app.  
+create the tournament and track the results.  
+run `python update_readme.py` to update the README with the latest stats.  
+push the changes to github to share the results with the community.  
 
 ## tracking results
 add all the players that play in the tournament.
@@ -398,6 +385,13 @@ you can select players that previously participated in the tournament or add new
 after that, you can start tracking the results of the tournament.
 in the tournaments tab, create a pairing and enter the results of the match.
 after saving the match, the statistics in the statistics tab will be automatically updated.
+
+# history
+The K4 Super Smash Bros Invitationals is a legendary tournament that has been held by the SSB.52 group since its inception in January 4. 2014. The tournament attracts the best players from all over the world who come to compete for gold and glory. The first K4 Super Smash Bros Invitational was a small affair, with only a few players attending. However, after the move from 52 to 4 it gained popularity, quickly attracting the best players from all of the region. 
+Over the years, the K4 Super Smash Bros Invitationals has become known for its fierce competition and high level of skill. Many of the top players in the world have competed in the tournament, and it has become a showcase for some of the most exciting and innovative gameplay in the Super Smash Bros. community.  
+The tournament has become a must-attend event for players and fans alike, and it has helped to cement Super Smash Bros. N64 as one of the most exciting and dynamic competitive gaming communities in the world.
+![](content/group-wide.png)
+***figure:*** *ssb52 at the annual board meeting on hyrule castle (2021)*
 """
     
     return content
