@@ -35,7 +35,7 @@ ARENA_INFO = {
     '2024-05-18': 'in the planted arena',
     '2024-11-09': 'in the planted arena',
     '2025-11-15': 'in the planted arena',
-    '2026-03-14': 'in the planted arena',
+    '2026-03-14': 'in rolands backyard arena',
 }
 
 

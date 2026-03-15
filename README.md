@@ -23,7 +23,7 @@
 
 
 ## tournaments
-**saturday, 14. Mar 2026**, tournament was conducted in the planted arena. an average of 16 games was played per player.
+**saturday, 14. Mar 2026**, tournament was conducted in rolands backyard arena. an average of 16 games was played per player.
 
 |                   | PK     	| LS     	| MM     	| RT     	| BG     	| LG     	| MX     	|   
 |----------         |:-----:    |:-----:    |:-----:    |:-----:    |:-----:    |:-----:    |:-----:    |  
